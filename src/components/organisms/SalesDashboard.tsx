@@ -26,7 +26,7 @@ export default function SalesDashboard() {
   return (
     <div className="p-6 space-y-4">
       <h1 className="text-3xl font-bold">Sales Dashboard</h1>
-      <FilterInput value={filterType} onChange={setFilterType} />
+      <FilterInput value={filterType} onChange={(val) => setFilterType(val as FilterType)} />
       <ChartTypeButtons selectedFilter={filterType} onChange={setFilterType} />
       <div className="mt-4">
         <ChartTypeButtons selectedFilter={filterType} onChange={setFilterType} /> {/* for filter */}
